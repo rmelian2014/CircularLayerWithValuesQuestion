@@ -12,6 +12,10 @@
 		FBC274AF1F080E6B007C5170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC274AD1F080E6B007C5170 /* Main.storyboard */; };
 		FBC274B11F080E6B007C5170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC274B01F080E6B007C5170 /* Assets.xcassets */; };
 		FBC274B41F080E6B007C5170 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC274B21F080E6B007C5170 /* LaunchScreen.storyboard */; };
+		FBC274BC1F080ED0007C5170 /* DegreeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC274BB1F080ED0007C5170 /* DegreeExtension.swift */; };
+		FBC274BE1F0810AE007C5170 /* CircularShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC274BD1F0810AE007C5170 /* CircularShapeLayer.swift */; };
+		FBC274C21F081210007C5170 /* CircularCAShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC274C11F081210007C5170 /* CircularCAShapeLayer.m */; };
+		FBC274C41F08136F007C5170 /* CirclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC274C31F08136F007C5170 /* CirclesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,12 @@
 		FBC274B01F080E6B007C5170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBC274B31F080E6B007C5170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBC274B51F080E6B007C5170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBC274BB1F080ED0007C5170 /* DegreeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DegreeExtension.swift; sourceTree = "<group>"; };
+		FBC274BD1F0810AE007C5170 /* CircularShapeLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularShapeLayer.swift; sourceTree = "<group>"; };
+		FBC274BF1F08120F007C5170 /* CircularLayerWithValuesQuestion-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CircularLayerWithValuesQuestion-Bridging-Header.h"; sourceTree = "<group>"; };
+		FBC274C01F081210007C5170 /* CircularCAShapeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularCAShapeLayer.h; sourceTree = "<group>"; };
+		FBC274C11F081210007C5170 /* CircularCAShapeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularCAShapeLayer.m; sourceTree = "<group>"; };
+		FBC274C31F08136F007C5170 /* CirclesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +64,18 @@
 		FBC274A81F080E6B007C5170 /* CircularLayerWithValuesQuestion */ = {
 			isa = PBXGroup;
 			children = (
+				FBC274C01F081210007C5170 /* CircularCAShapeLayer.h */,
+				FBC274C11F081210007C5170 /* CircularCAShapeLayer.m */,
+				FBC274BB1F080ED0007C5170 /* DegreeExtension.swift */,
 				FBC274A91F080E6B007C5170 /* AppDelegate.swift */,
 				FBC274AB1F080E6B007C5170 /* ViewController.swift */,
 				FBC274AD1F080E6B007C5170 /* Main.storyboard */,
 				FBC274B01F080E6B007C5170 /* Assets.xcassets */,
 				FBC274B21F080E6B007C5170 /* LaunchScreen.storyboard */,
 				FBC274B51F080E6B007C5170 /* Info.plist */,
+				FBC274BD1F0810AE007C5170 /* CircularShapeLayer.swift */,
+				FBC274BF1F08120F007C5170 /* CircularLayerWithValuesQuestion-Bridging-Header.h */,
+				FBC274C31F08136F007C5170 /* CirclesView.swift */,
 			);
 			path = CircularLayerWithValuesQuestion;
 			sourceTree = "<group>";
@@ -96,8 +112,9 @@
 				TargetAttributes = {
 					FBC274A51F080E6B007C5170 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = XSDZKCRSXQ;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = FWYL5KC8D3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -137,7 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC274BC1F080ED0007C5170 /* DegreeExtension.swift in Sources */,
+				FBC274C21F081210007C5170 /* CircularCAShapeLayer.m in Sources */,
+				FBC274C41F08136F007C5170 /* CirclesView.swift in Sources */,
 				FBC274AC1F080E6B007C5170 /* ViewController.swift in Sources */,
+				FBC274BE1F0810AE007C5170 /* CircularShapeLayer.swift in Sources */,
 				FBC274AA1F080E6B007C5170 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,11 +282,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XSDZKCRSXQ;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = FWYL5KC8D3;
 				INFOPLIST_FILE = CircularLayerWithValuesQuestion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pruebas.CircularLayerWithValuesQuestion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c6899c4d-4e8a-483c-809a-4a59fc296041";
+				PROVISIONING_PROFILE_SPECIFIER = forTestingDevelopment;
+				SWIFT_OBJC_BRIDGING_HEADER = "CircularLayerWithValuesQuestion/CircularLayerWithValuesQuestion-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,11 +300,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XSDZKCRSXQ;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = FWYL5KC8D3;
 				INFOPLIST_FILE = CircularLayerWithValuesQuestion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pruebas.CircularLayerWithValuesQuestion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "66e7537d-af00-4890-ad27-1514175ab9a6";
+				PROVISIONING_PROFILE_SPECIFIER = forTestDistributionAdHoc;
+				SWIFT_OBJC_BRIDGING_HEADER = "CircularLayerWithValuesQuestion/CircularLayerWithValuesQuestion-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +333,7 @@
 				FBC274BA1F080E6B007C5170 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
